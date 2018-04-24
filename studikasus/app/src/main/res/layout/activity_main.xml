@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FF0000FF"
+    android:layout_height="match_parent"
+    tools:context="com.alfarises.studikasus.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/parent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FARIS STEAM"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF"
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:id="@+id/parent2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="JENIS STEAM "
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold"
+                android:inputType="date" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txttanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textStyle="italic"
+                android:textColor="#FFFFFFFF"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/btntanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="tanggal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtwaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="italic"
+                android:inputType="time" />
+
+            <Button
+                android:id="@+id/btnwaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="waktu" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnCuci"
+            android:text="Proses"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

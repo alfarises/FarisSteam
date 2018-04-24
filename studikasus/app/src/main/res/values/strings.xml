@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">studikasus</string>
+    <string-array name="Jenis_array">
+        <item>SALJU</item>
+
+        <item>Standar steam</item>
+    </string-array>
+
+</resources>
